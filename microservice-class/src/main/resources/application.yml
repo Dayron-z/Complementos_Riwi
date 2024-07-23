@@ -1,0 +1,28 @@
+# Configuración del servidor
+server:
+  port: 8090
+
+spring:
+  application:
+    name: msvc-class
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/classDb
+    username: root
+    password: Rlwl2023*
+  jpa:
+    hibernate:
+      ddl-auto: create # Cambia esto a 'update' en producción
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+# Configuración temporal del Config Server
+  config:
+    import: optional:configserver:http://localhost:8888
+
+# Configuración del cliente Eureka
+eureka:
+  instance:
+    hostname: localhost # Puede ser 'localhost' o el nombre de tu host real
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
