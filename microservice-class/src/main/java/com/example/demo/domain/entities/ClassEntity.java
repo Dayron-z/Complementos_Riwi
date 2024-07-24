@@ -1,4 +1,4 @@
-package com.example.demo.entities;
+package com.example.demo.domain.entities;
 
 
 import com.example.demo.utils.State;
@@ -23,5 +23,7 @@ public class ClassEntity {
     String text;
     @Column(nullable = false)
     LocalDateTime created_at;
-    State state;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    State state = State.ACTIVE;
 }

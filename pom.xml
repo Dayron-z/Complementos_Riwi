@@ -16,10 +16,10 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
+        <module>microservice-class</module>
         <module>microservice-gateway</module>
         <module>microservice-eureka</module>
         <module>microservice-config</module>
-        <module>microservice-class</module>
     </modules>
 
     <name>ComplementosRiwi</name>
