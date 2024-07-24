@@ -1,7 +1,7 @@
 package com.example.demo.domain.entities;
 
 
-import com.example.demo.utils.State;
+import com.example.demo.utils.enums.State;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -5,6 +5,7 @@ import com.example.demo.api.dto.ClassRequest;
 import com.example.demo.api.dto.ClassResponse;
 import com.example.demo.domain.entities.ClassEntity;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.MappingConstants;
 
 @Mapper(componentModel = MappingConstants.ComponentModel.SPRING)
